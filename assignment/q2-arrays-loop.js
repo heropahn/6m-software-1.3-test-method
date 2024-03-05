@@ -8,6 +8,10 @@ const studentList = ["Johnson", "Christina", "Michael", "Lina", "Larry", "Michel
 
 function printStudentNames(){
     // Add code here
+    for(let i=0; i < studentList.length; i++) {
+        console.log(studentList[i]);
+    }
+    
 }
 
 printStudentNames();
@@ -17,3 +21,5 @@ module.exports = {
     studentList,
     printStudentNames
 }
+
+// module.exports allow other files to use this file's studentList and printStudentNAmes

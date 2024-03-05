@@ -3,11 +3,12 @@
 // const {} is what we call object destructuring and it allows us to unpack properties from objects into variables.
 const {studentList, printStudentNames} = require("./q2-arrays-loop");
 const {convert} = require("./q3-objects");
+// in order for us to use q2-array loop's studentList and printSTudentNAmes, we use the require keyword
 
 //The describe () creates a block that groups together several related tests
 describe("Demo", ()=>{
     //it() describes a single test
-    it("should test the printStudentNames function of q2", ()=>{
+   it("should test the printStudentNames function of q2", ()=>{
         //The spyOn creates a mock function based on the method inside, in this case console.log
         const spyFn = jest.spyOn(console, "log");
         printStudentNames();
